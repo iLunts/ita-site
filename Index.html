@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="site">
+<html lang="en" data-ng-app>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,47 +7,116 @@
     <link rel="apple-touch-icon-precomposed" href="/Content/img/apple-touch-icon.png">
     <title>ITA.by</title>
 
-    <link rel="stylesheet" href="docs/css/Main.css">
-    <link rel="stylesheet" href="docs/css/Large.css">
-    <link rel="stylesheet" href="docs/css/Medium.css">
-    <link rel="stylesheet" href="docs/css/Small.css">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="Scripts/app.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <!-- start Components -->
+    <link rel="stylesheet" href="Content/css/Components/Reset.css">
+    <link rel="stylesheet" href="Content/css/Components/Nav.css">
+    <link rel="stylesheet" href="Content/css/Components/Button.css">
+    <link rel="stylesheet" href="Content/css/Components/Grid.css">
+    <link rel="stylesheet" href="Content/css/Components/Block.css">
+    <link rel="stylesheet" href="Content/css/Components/Icons.css">
+    <link rel="stylesheet" href="Content/css/Components/Text.css">
+    <link rel="stylesheet" href="Content/css/Components/Input.css">
+    <link rel="stylesheet" href="Content/css/Components/Utilits.css">
+    <link rel="stylesheet" href="Content/css/Components/Text.css">
+    <!-- end Components -->
+
+    <link rel="stylesheet" href="Content/css/Main.css">
+    <link rel="stylesheet" href="Content/css/Large.css">
+    <link rel="stylesheet" href="Content/css/Medium.css">
+    <link rel="stylesheet" href="Content/css/Small.css">
 </head>
 <body>
-    <nav class="navbar navbar--attached">
+    <nav class="navbar">
             <div class="container container--center">
+                <div class="grid">
+                    <div class="col--2-10 navbar__brand">
+                        <a href="/"><img src="Content/img/logo.png" title="ITA alliance" alt="ITA alliance"></a>
+                    </div>
+                    <!-- <div class="col--4-10"></div> -->
+                    <ul class="col--8-10 navbar__nav text--right">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li>
+                            <input type="search" class="input input--search input--mini border--rounded">
+                        </li>
+                        <li><a href="#">РУС ^</a></li>
+                    </ul>
+                </div>
 
-                <a class="navbar__brand hidden--small" href="~/">
-                    <img class="margin--reset" src="docs/images/logo_uikit.svg" title="" alt="">
-                </a>
+                <!-- <a class="navbar__brand small--hidden" href="~/">
+                    <img src="Content/img/logo.png" title="ITA alliance" alt="ITA alliance">
+                </a> -->
 
-                <ul class="navbar__nav hidden--small">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Партнерам</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
 
-                <a href="#offcanvas" class="navbar__toggle visible--small"></a>
+                <a href="#offcanvas" class="navbar__toggle small--visible"></a>
 
-                <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="docs/images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+                <!-- <div class="navbar__brand navbar--center small--visible">
+                    <img src="Content/img/logo.png" title="ITA alliance" alt="ITA alliance">
+                </div> -->
 
             </div>
         </nav>
 
         <main>
-            <div class="grid">
-                <div class="col--1-1">
-                    Тут будет контент......
+            <div class="block block--primary">
+                <div class="container container--center">
+                    <div class="grid">
+                        <div class="col--1-1">
+                            123123
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="block block--default">
+                <div class="main container container--center">
+                    <div class="grid">
+                        <div class="col--1-1 text--center">
+                            <h1 class="main__title">Мы разрабатываем программное обеспечение</h1>
+                        </div>
+                    </div>
+                    <ul class="grid grid-col--1-3 main__list text--center">
+                        <li>
+                            <i class="icon-tablet"></i>
+                            <p>Электронной и мобильной коммерции</p>
+                        </li>
+                        <li>
+                            <i class="icon-briefcase"></i>
+                            <p>Финансового и банковского сектора</p>
+                        </li>
+                        <li>
+                            <i class="icon-apartment"></i>
+                            <p>Агенств недвижемости</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </main>
 
         <footer>
-            <div class="grid">
-                <div class="col--1-1">
-                    Фуутер...
+            <div class="container container--center">
+                <div class="grid">
+                    <div class="col--1-1">
+                        Фуутер...
+                    </div>
                 </div>
             </div>
         </footer>
-</body>
+
+    </body>
 </html>

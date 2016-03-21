@@ -53,41 +53,40 @@
     background: @input-background;
     border-radius: @input-border-radius;
     border: 1px solid @input-border-color;
-    border-bottom: 2px solid @input-border-bottom-color;
     margin-bottom: @input-margin;
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     transition: all 200ms;
 
-    &:focus{
-        border-bottom-color: #FFC716;
-    }
+    // &:focus{
+    //     border-bottom-color: @input-border-bottom-color-active;
+    // }
 
     // Element 'input__group'
-    &__group{
-        position: relative;
-
-        &__desc{
-            position: absolute;
-            top: 42%;
-            right: 10px;
-            transform: translateY(-50%);
-        }
-
-        & > [class^='icon-']{
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    }
+    // &__group{
+    //     position: relative;
+    //
+    //     &__desc{
+    //         position: absolute;
+    //         top: 42%;
+    //         right: 10px;
+    //         transform: translateY(-50%);
+    //     }
+    //
+    //     & > [class^='icon-']{
+    //         position: absolute;
+    //         left: 10px;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //     }
+    // }
 
     // Modificator `input--rounded`
-    &--rounded{
-        border-radius: 100px;
-        border-bottom: 1px solid @input-border-bottom-color;
-    }
+    // &--rounded{
+    //     border-radius: 100px;
+    //     border-bottom: 1px solid @input-border-bottom-color;
+    // }
 
     // Modificator 'search'
     &--search {
@@ -99,11 +98,11 @@
     }
 
     // Modificator 'tags'
-    &--tags{
-        border-color: @input-tags-border-color;
-    }
+    // &--tags{
+    //     border-color: @input-tags-border-color;
+    // }
 
-    // Modificator 'tags'
+    // Modificator 'small'
     &--small{
         padding: @input-padding--small;
 
@@ -112,28 +111,37 @@
         }
     }
 
-    // Modificator 'tags'
-    &--select{
-        position: relative;
-        margin-bottom: @input-margin;
+    // Modificator 'small'
+    &--mini{
+        padding: (@input-padding--small / 2);
 
-        & > select{
-            cursor: pointer;
-            margin-bottom: 0;
-            padding-right: (@input-padding * 3);
-        }
-
-        &:after{
-            content: '\e5c5';
-            font-family: 'icomoon';
-            position: absolute;
-            right: @input-padding;
-            top: 50%;
-            font-size: 18px;
-            color: #5F5F5F;
-            transform: translateY(-50%);
+        &.input--search{
+            padding-left: (@input-padding--big * 2 - 5) !important;
         }
     }
+
+    // Modificator 'tags'
+    // &--select{
+    //     position: relative;
+    //     margin-bottom: @input-margin;
+    //
+    //     & > select{
+    //         cursor: pointer;
+    //         margin-bottom: 0;
+    //         padding-right: (@input-padding * 3);
+    //     }
+    //
+    //     &:after{
+    //         content: '\e5c5';
+    //         font-family: 'icomoon';
+    //         position: absolute;
+    //         right: @input-padding;
+    //         top: 50%;
+    //         font-size: 18px;
+    //         color: #5F5F5F;
+    //         transform: translateY(-50%);
+    //     }
+    // }
 }
 
 // *********** All inputs ***************
@@ -159,18 +167,18 @@
 
 /// Form__row
 // Element `form__row`
-.form__row{
-    & + .form__row{
-        margin-top: 15px;
-    }
-}
+// .form__row{
+//     & + .form__row{
+//         margin-top: 15px;
+//     }
+// }
 
-.form__controls{
-    margin-left: 30%;
-    & .input{
-        margin: 0;
-    }
-}
+// .form__controls{
+//     margin-left: 30%;
+//     & .input{
+//         margin: 0;
+//     }
+// }
 
 .label{
 

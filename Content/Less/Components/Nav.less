@@ -1,0 +1,107 @@
+// out: ../../css/Components/Nav.css, compress: true
+// Name:            Nav
+// Description:     Defines styles for list navigations
+//
+// Component:       `nav`
+//
+// Sub-objects:     `nav__header`
+//                  `nav__divider`
+//                  `nav__sub`
+//
+// Modifiers:       `nav--parent-icon`
+//                  `nav--side`
+//                  `nav--dropdown`
+//                  `nav--navbar`
+//                  `nav--offcanvas`
+//
+// States:          `active`
+//                  `parent`
+//                  `open`
+//                  `touch`
+//
+// Uses:            Icon: FontAwesome or icoMoon
+//
+// Used by:         Panel
+//                  Dropdown
+//
+// Markup:
+//
+// <!-- nav -->
+// <ul class="nav">
+//     <li class="active"><a href=""></a></li>
+//     <li><a href=""></a></li>
+// </ul>
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@navbar-background:                                rgba(255, 255, 255, 0.7);
+@navbar-height:                                    54px;
+@navbar-padding:                                   15px;
+
+@nav-padding:                                      15px;
+
+
+@nav-padding-vertical:                             5px;
+@nav-padding-horizontal:                           15px;
+
+/* ========================================================================
+   Component: Nav
+ ========================================================================== */
+
+.nav{
+    border: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: @navbar-height;
+    background: @navbar-background;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    z-index: 10;
+
+    // Element 'navbar__nav'
+    &__brand{
+        width: (@navbar-height * 3);
+        padding: (@nav-padding / 3) 0;
+    }
+
+    // Element 'navbar__nav'
+    &__nav{
+        font-size: 0;
+        list-style: none;
+        & > li{
+            font-size: 14px;
+            display: inline-block;
+            & > a{
+                position: relative;
+                height: @navbar-height;
+                display: inline-block;
+                padding: 0 (@nav-padding);
+                text-decoration: none;
+                color: #171717;
+                line-height: @navbar-height;
+                // &:after{
+                //     content: '';
+                //     width: 1px;
+                //     height: 30px;
+                //     border-right: 1px solid #ddd;
+                //     position: absolute;
+                //     left: 0;
+                //     bottom: 10px;
+                // }
+            }
+
+            & > input{
+                margin-top: 5px;
+                // width: 140px;
+            }
+        }
+    }
+}
