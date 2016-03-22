@@ -9,6 +9,9 @@
 
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="Scripts/app.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script
+    <script src="bower_components/owl.carousel/src/js/owl.carousel.js"></script>
+    <script src="Scripts/Scripts.js"></script>
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <!-- start Components -->
     <link rel="stylesheet" href="Content/css/Components/Reset.css">
@@ -21,6 +24,9 @@
     <link rel="stylesheet" href="Content/css/Components/Input.css">
     <link rel="stylesheet" href="Content/css/Components/Utilits.css">
     <link rel="stylesheet" href="Content/css/Components/Text.css">
+
+    <link rel="stylesheet" href="bower_components/owl.carousel/src/css/owl.carousel.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/src/css/owl.theme.default.css">
     <!-- end Components -->
 
     <link rel="stylesheet" href="Content/css/Main.css">
@@ -67,16 +73,45 @@
                 <div class="container container--center">
                     <div class="grid">
                         <div class="col--1-1">
-                            123123
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <!-- Set up your HTML -->
+                            <div class="owl-carousel">
+                                <div class="item" style="height:300px">
+                                  <h4>1</h4>
+                                </div>
+                                <div class="item" style="height:100px">
+                                  <h4>2</h4>
+                                </div>
+                                <div class="item" style="height:500px">
+                                  <h4>3</h4>
+                                </div>
+                                <div class="item" style="height:250px">
+                                  <h4>4</h4>
+                                </div>
+                                <div class="item" style="height:400px">
+                                  <h4>5</h4>
+                                </div>
+                                <div class="item" style="height:500px">
+                                  <h4>6</h4>
+                                </div>
+                                <div class="item" style="height:600px">
+                                  <h4>7</h4>
+                                </div>
+                                <div class="item" style="height:400px">
+                                  <h4>8</h4>
+                                </div>
+                                <div class="item" style="height:300px">
+                                  <h4>9</h4>
+                                </div>
+                                <div class="item" style="height:350px">
+                                  <h4>10</h4>
+                                </div>
+                                <div class="item" style="height:200px">
+                                  <h4>11</h4>
+                                </div>
+                                <div class="item" style="height:150px">
+                                  <h4>12</h4>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -106,13 +141,71 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="block block--default">
+                <div class="main container container--center">
+                    <div class="grid">
+                        <div class="col--1-1 text--center">
+                            <h1 class="main__title">Почему мы?</h1>
+                        </div>
+                    </div>
+                    <ul class="grid grid--large grid-col--large-1-4 grid-col--medium-1-2 main__list--check">
+                        <li>
+                            <i class="icon-done"></i>
+                            <p>Резиденты Парка Высоких Технологий</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</span>
+                        </li>
+                        <li>
+                            <i class="icon-done"></i>
+                            <p>Участники клуба Microsoft BizSpark</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</span>
+                        </li>
+                        <li>
+                            <i class="icon-done"></i>
+                            <p>Участники программы Microsoft Partner Network</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</span>
+                        </li>
+                        <li>
+                            <i class="icon-done"></i>
+                            <p>Более 50 проектов успешно запущенными во всем мире</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</span>
+                        </li>
+                    </ul>
+
+                    <hr class="margin--v-large">
+                </div>
+            </div>
+
+            <div class="block block--gray-light">
+                <div class="container container--center">
+                    <ul class="grid grid--small grid-col--1-5">
+                        <li>
+                            Партнеры
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </main>
 
-        <footer>
+        <footer class="margin--top">
             <div class="container container--center">
                 <div class="grid">
-                    <div class="col--1-1">
-                        Фуутер...
+                    <div class="col--1-4">
+                        <a href="/"><img src="Content/img/logo.png" title="ITA alliance" alt="ITA alliance" width="150"></a>
+                        <p class="text--small text--muted">Мы быстрорастущая аутсорсинговая компания, офшорного программирования</p>
+                    </div>
+                    <div class="col--3-4">
+                        <ul class="grid grid--small grid-col--1-4">
+                            <li>
+                                123123123
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid">
+                    <div class="col--1-1 text--center text--muted text--small">
+                        © 2016 ITA-Dev.com INC. ALL RIGHTS RESERVED.
                     </div>
                 </div>
             </div>
