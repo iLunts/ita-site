@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="Content/css/Components/Grid.css">
     <link rel="stylesheet" href="Content/css/Components/Block.css">
     <link rel="stylesheet" href="Content/css/Components/Icons.css">
+    <link rel="stylesheet" href="Content/css/Components/List.css">
     <link rel="stylesheet" href="Content/css/Components/Text.css">
     <link rel="stylesheet" href="Content/css/Components/Input.css">
     <link rel="stylesheet" href="Content/css/Components/Utilits.css">
@@ -176,13 +177,34 @@
                 </div>
             </div>
 
-            <div class="block block--gray-light">
-                <div class="container container--center">
-                    <ul class="grid grid--small grid-col--1-5">
+            <div class="partner block block--gray-light">
+
+                <div class="partner container container--center">
+                    <div class="partner__title">
+                        Партнеры
+                    </div>
+                    <ul class="partner__list grid grid-col--1-5">
                         <li>
-                            Партнеры
+                            <img src="/Content/img/partner/epam.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="/Content/img/partner/r-style.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Content/img/partner/microsoft-bizspark.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Content/img/partner/microsoft-partner.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Content/img/partner/htp.png" alt="">
                         </li>
                     </ul>
+
+                    <!-- <div class="partner__nav">
+                        <a href="" class="partner__nav partner__nav--left">></a>
+                        <a href="" class="partner__nav partner__nav--right"><</a>
+                    </div> -->
                 </div>
             </div>
         </main>
@@ -195,17 +217,44 @@
                         <p class="text--small text--muted">Мы быстрорастущая аутсорсинговая компания, офшорного программирования</p>
                     </div>
                     <div class="col--3-4">
-                        <ul class="grid grid--small grid-col--1-4">
-                            <li>
-                                123123123
+                        <ul class="grid grid--small">
+                            <li class="col--2-10">
+                                <ul class="list list__footer">
+                                    <li><span class="text--bold">О компании</span></li>
+                                    <li><a href="#" class="">Наша команда</a></li>
+                                    <li><a href="#" class="">Новости</a></li>
+                                    <li><a href="#" class="">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="col--3-10">
+                                <ul class="list list__footer">
+                                    <li><span class="text--bold">Адрес</span></li>
+                                    <li><a href="#" class="">Республика Беларусь</a></li>
+                                    <li><a href="#" class="">Ул. Домбровская,9, офис 8.3.3</a></li>
+                                </ul>
+                            </li>
+                            <li class="col--3-10">
+                                <ul class="list list__footer">
+                                    <li><span class="text--bold">Телефоны</span></li>
+                                    <li><a href="tel:+375173880491" class="">+375-17-388-04-91</a></li>
+                                    <li><a href="tel:+19172009202" class="">+1-917-200-92-02</a></li>
+                                    <li><a href="tel:+375173880492" class="">Факс: +375-17-388-04-92</a></li>
+                                </ul>
+                            </li>
+                            <li class="col--2-10">
+                                <ul class="list list__footer">
+                                    <li><span class="text--bold">Почта</span></li>
+                                    <li><a href="mailto:info@ita-dev.com" class="">info@ita-dev.com</a></li>
+                                    <li><a href="mailto:sales@ita-dev.com" class="">sales@ita-dev.com</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <hr>
+                <hr class="margin--top-small">
                 <div class="grid">
                     <div class="col--1-1 text--center text--muted text--small">
-                        © 2016 ITA-Dev.com INC. ALL RIGHTS RESERVED.
+                        <p class="margin--v">© 2016 ITA-Dev.com INC. ALL RIGHTS RESERVED.</p>
                     </div>
                 </div>
             </div>
