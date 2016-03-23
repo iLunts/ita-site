@@ -1,0 +1,75 @@
+// out: ../../css/Components/Slider.css, compress: true
+// Name:            Slider
+// Description:     Defines styles to create layouts with Slider
+//
+// Component:       `slider__*`
+//
+//
+// ========================================================================
+
+@slider-item-padding:                     40px;
+
+/* ========================================================================
+   Component: Slider
+ ========================================================================== */
+
+.slider {
+
+    &-main{
+        background: url(/Content/img/slider/back-1.jpg);
+        background-size: cover;
+    }
+
+    &__item{
+        position: relative;
+        height: 300px;
+        width: 100%;
+        padding: @slider-item-padding 0;
+        // background: #16A7DB;
+        overflow: hidden;
+
+        // Modificator 'slider__item--overlay'
+        &--overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            // background: rgba(22, 167, 219, 0.8);
+
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16a7db+0,ffffff+100&0.7+0,1+100 */
+            background: -moz-linear-gradient(top,  rgba(22,167,219,0.7) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(22,167,219,0.7) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(22,167,219,0.7) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b316a7db', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+        }
+
+        // Modificator 'slider__item__text'
+        &__text{
+            position: relative;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        // Modificator 'slider__item--1'
+        &--1{
+            // width: 100%;
+            // background: url(/Content/img/slider/back-1.jpg);
+            // background-size: cover;
+        }
+    }
+}
+
+
+
+.button{
+    &--slider{
+        display: inline-block;
+        border: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+        border-radius: 200px;
+        padding: 10px 30px;
+    }
+}

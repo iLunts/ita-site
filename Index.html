@@ -9,7 +9,7 @@
 
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="Scripts/app.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/owl.carousel/src/js/owl.carousel.js"></script>
     <script src="Scripts/Scripts.js"></script>
 
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="Content/css/Components/Button.css">
     <link rel="stylesheet" href="Content/css/Components/Grid.css">
     <link rel="stylesheet" href="Content/css/Components/Block.css">
+    <link rel="stylesheet" href="Content/css/Components/Slider.css">
     <link rel="stylesheet" href="Content/css/Components/Icons.css">
     <link rel="stylesheet" href="Content/css/Components/List.css">
     <link rel="stylesheet" href="Content/css/Components/Text.css">
@@ -60,54 +61,39 @@
         </nav>
 
         <main class="page-wrap">
-            <div class="block block--primary">
-                <div class="container container--center">
-                    <div class="grid">
-                        <div class="col--1-1">
-                            <!-- Set up your HTML -->
-                            <div class="owl-carousel">
-                                <div class="item" style="height:300px">
-                                  <h4>1</h4>
+
+            <!-- Slider -->
+            <div class="owl-carousel slider-main">
+                <div class="owl-item slider__item slider__item--1">
+                    <div class="slider__item--overlay"></div>
+                    <div class="slider__item__text">
+                        <div class="container container--center">
+                            <div class="grid">
+                                <div class="col--7-10">
+                                    <p class="slider__item--text-sub">агентства недвижимости</p>
+                                    <p class="text--h1 text--bold">ESTATE</p>
+                                    <p class="text--h3">- это «новое слово» в работе агентств недвижимости!</p>
+                                    <!-- <a href="#" class="button--slider margin--top-large">Подробнее</a> -->
                                 </div>
-                                <div class="item" style="height:100px">
-                                  <h4>2</h4>
+                                <div class="col--3-10">
+                                    <img src="/Content/img/slider/nexus-splite.png" alt="">
                                 </div>
-                                <div class="item" style="height:500px">
-                                  <h4>3</h4>
-                                </div>
-                                <div class="item" style="height:250px">
-                                  <h4>4</h4>
-                                </div>
-                                <div class="item" style="height:400px">
-                                  <h4>5</h4>
-                                </div>
-                                <div class="item" style="height:500px">
-                                  <h4>6</h4>
-                                </div>
-                                <div class="item" style="height:600px">
-                                  <h4>7</h4>
-                                </div>
-                                <div class="item" style="height:400px">
-                                  <h4>8</h4>
-                                </div>
-                                <div class="item" style="height:300px">
-                                  <h4>9</h4>
-                                </div>
-                                <div class="item" style="height:350px">
-                                  <h4>10</h4>
-                                </div>
-                                <div class="item" style="height:200px">
-                                  <h4>11</h4>
-                                </div>
-                                <div class="item" style="height:150px">
-                                  <h4>12</h4>
-                                </div>
-                              </div>
+                            </div>
                         </div>
+                    </div>                </div>
+                <div class="item slider__item slider__item--2">
+                    <div class="slider__item--overlay"></div>
+                    <div class="slider__item__text">
+                        <h4>Слайд №2</h4>
                     </div>
                 </div>
+                <div class="item slider__item slider__item--3">
+                  <h4>Слайд №3</h4>
+                </div>
+                <div class="item slider__item slider__item--4">
+                  <h4>Слайд №4</h4>
+                </div>
             </div>
-
 
             <div class="block block--default">
                 <div class="main container container--center">
