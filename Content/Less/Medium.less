@@ -1,1 +1,72 @@
 // out: ../css/Medium.css, compress: true
+
+// Variables
+// ********************
+@main-list-height:                     2em;
+@main-list-font-size:                  3em;
+@main-list-ckeck-icon-height:          40px;
+// ****************************************
+
+// **************************
+/* Portrait and Landscape */
+// **************************
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .main{
+        &__list{
+            & > li{
+                & > i{
+                    width: @main-list-height;
+                    height: @main-list-height;
+                    font-size: @main-list-font-size;
+                    line-height: @main-list-height;
+                    box-shadow: 0 8px 25px 0 rgba(0,0,0,0.2);
+                }
+
+                & + li{
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        left: -50px;
+                        top: 40px;
+                        width: 40%;
+                        height: 4px;
+                        border-radius: 10px;
+                        background: #f3f3f3;
+                    }
+                }
+
+                & > p{
+                    margin: 20px auto 0 auto;
+                    color: #222222;
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 700;
+                }
+
+                &:hover > i{
+                    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.2);
+                }
+            }
+
+            // Modificator 'main__list--check'
+            &--check{
+                & > li{
+                    & > i{
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Portrait */
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+
+}
