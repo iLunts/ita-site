@@ -49,15 +49,6 @@
                     box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.2);
                 }
             }
-
-            // Modificator 'main__list--check'
-            &--check{
-                & > li{
-                    & > i{
-                        position: relative;
-                    }
-                }
-            }
         }
     }
 }
@@ -68,5 +59,25 @@
     and (min-device-width: 768px)
     and (max-device-width: 1024px)
     and (orientation: portrait) {
+
+    .main{
+
+        // Element 'main__list'
+        &__list{
+
+            // Modificator 'main__list--check'
+            &--check{
+                & > li{
+                    margin-bottom: 30px;
+
+                    & > i{
+                        position: relative;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
 
 }
