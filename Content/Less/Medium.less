@@ -13,6 +13,10 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
+    .navbar__brand{
+        line-height: 40px;
+    }
+
     .main{
         &__list{
             & > li{
@@ -60,10 +64,21 @@
     and (max-device-width: 1024px)
     and (orientation: portrait) {
 
+    .button--lang{
+        display: none;
+    }
+
     .main{
 
         // Element 'main__list'
         &__list{
+            & > li{
+                & + li{
+                    &:before{
+                        left: -35px;
+                    }
+                }
+            }
 
             // Modificator 'main__list--check'
             &--check{
