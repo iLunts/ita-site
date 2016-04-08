@@ -3,6 +3,8 @@ $(document).ready(function(){
       items:1,
     //   margin:1,
       loop:true,
+    //   nav: true,
+    //   navText: ["", ""],
       autoHeight:true
   });
 });
