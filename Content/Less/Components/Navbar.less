@@ -92,15 +92,6 @@
                 text-decoration: none;
                 color: #171717;
                 line-height: @navbar-height;
-                // &:after{
-                //     content: '';
-                //     width: 1px;
-                //     height: 30px;
-                //     border-right: 1px solid #ddd;
-                //     position: absolute;
-                //     left: 0;
-                //     bottom: 10px;
-                // }
             }
 
             & > .button--lang{
@@ -123,8 +114,20 @@
 
             & > input{
                 margin-top: 5px;
-                // width: 140px;
             }
         }
+    }
+}
+
+
+
+// *********************************************************
+//                        SMALL
+// *********************************************************
+
+@media (max-width: 767px)  {
+
+    .navbar{
+        height: 40px;
     }
 }

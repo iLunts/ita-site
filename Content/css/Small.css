@@ -1,1 +1,1 @@
-.small--hidden{display:none}.small--hidden{display:none}
+@media (max-width:767px){body{background:pink;padding-top:13px}.small--hidden{display:none}.small--hidden{display:none}}
