@@ -1,4 +1,4 @@
-// out: ../css/Main.css, compress: true
+// out: ../css/main.css, compress: true
 
 
 // Variables
@@ -88,10 +88,12 @@ body, html{
         &--check{
             & > li{
                 position: relative;
-                padding-left: @main-list-ckeck-icon-height;
+                margin-top: @main-list-ckeck-icon-height;
                 & > i{
                     position: absolute;
-                    left: 0;
+                    left: 50%;
+                    top: -40px;
+                    margin-left: -(@main-list-ckeck-icon-height / 2);
                     width: @main-list-ckeck-icon-height;
                     height: @main-list-ckeck-icon-height;
                     border-radius: @main-list-ckeck-icon-height;
