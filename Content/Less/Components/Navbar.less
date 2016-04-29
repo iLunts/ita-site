@@ -77,6 +77,11 @@
         width: 150px;
     }
 
+    // Element 'navbar__burger'
+    &__burger{
+        font-size: 20px;
+    }
+
     // Element 'navbar__nav'
     &__nav{
         font-size: 0;
@@ -129,5 +134,26 @@
 
     .navbar{
         height: 40px;
+
+        // Element 'navbar__brand'
+        &__brand img{
+            width: 120px;
+            margin-top: 3px;
+        }
+    }
+}
+
+// *********************************************************
+//                MEDIUM  Portrait
+// *********************************************************
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+
+    .navbar__nav{
+        & .button--lang{
+            display: none;
+        }
     }
 }

@@ -13,8 +13,18 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    body{
-        background: red;
+    // Element 'hidden'
+    .hidden{
+        &--small{
+            display: inline-block;
+        }
+    }
+
+    // Element 'visible'
+    .visible{
+        &--small{
+            display: none !important;
+        }
     }
 
     .navbar__brand{
@@ -88,11 +98,14 @@
             &--check{
                 & > li{
                     margin-bottom: 30px;
+                    margin-top: 0;
 
                     & > i{
                         position: relative;
                         display: block;
                         margin: 0 auto;
+                        top: 0;
+                        left: 0;
                     }
                 }
             }

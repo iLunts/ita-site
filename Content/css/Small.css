@@ -1,1 +1,1 @@
-@media (max-width:767px){body{background:pink;padding-top:13px}.small--hidden{display:none}.small--hidden{display:none}}
+@media (max-width:767px){body{padding-top:13px}.hidden--small{display:none !important}.visible--small{display:inline-block}.footer{text-align:center;height:120px}.page-wrap{margin-bottom:-120px}.partner__title{top:-20px;font-size:40px}.main__title{margin:30px 0}}

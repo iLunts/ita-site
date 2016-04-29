@@ -5,17 +5,46 @@
 
 @media (max-width: 767px)  {
     body{
-        background: pink;
         padding-top: 13px;
     }
 
-    .small{
-        &--hidden{
-            display: none;
+    // Element 'hidden'
+    .hidden{
+        &--small{
+            display: none !important;
         }
+    }
 
-        &--hidden{
-            display: none;
+    // Element 'visible'
+    .visible{
+        &--small{
+            display: inline-block;
+        }
+    }
+
+    // Element 'footer'
+    .footer{
+        text-align: center;
+        height: 120px;
+    }
+
+    // Element 'page-wrap'
+    .page-wrap {
+        margin-bottom: -120px;
+    }
+
+    // Element 'partner'
+    .partner{
+        &__title{
+            top: -20px;
+            font-size: 40px;
+        }
+    }
+
+    // Element 'main'
+    .main{
+        &__title{
+            margin: 30px 0;
         }
     }
 }

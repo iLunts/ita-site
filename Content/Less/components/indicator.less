@@ -1,0 +1,93 @@
+// out: ../../css/components/indicator.css, compress: true
+// Name:            Indicator
+// Description:     Provides a responsive, Indicator
+//
+// Component:       `indicator`
+//
+// Modifiers:       `indicator--*`
+//                  `indicator--*`
+//                  `indicator--*`
+//                  `indicator--*`
+//                  `indicator--*`
+//                  `indicator--*`
+//
+// ========================================================================
+
+// Variables
+
+// ========================================================================
+
+//
+// Breakpoints
+//
+@breakpoint-fluid:                              100%;
+
+@breakpoint-small:                              768px;
+@breakpoint-medium:                             1024px;
+@breakpoint-large:                              1220px;
+@breakpoint-xlarge:                             1600px;
+@breakpoint-xxlarge:                            2000px;
+
+@breakpoint-mini-max:                           (@breakpoint-small - 1);
+@breakpoint-small-max:                          (@breakpoint-medium - 1);
+@breakpoint-medium-max:                         (@breakpoint-large - 1);
+@breakpoint-large-max:                          (@breakpoint-xlarge - 1);
+@breakpoint-xlarge-max:                         (@breakpoint-xlarge - 1);
+
+
+/* Container
+ ========================================================================== */
+ .indicator{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    background: url('/Content/img/indicator.jpg');
+    background-repeat: no-repeat;
+    border-radius: 35px;
+    opacity: 0.3;
+    transition: all 250ms;
+    z-index: 999999;
+
+    &:hover{
+        opacity: 1;
+        transition: all 250ms;
+    }
+ }
+
+
+// Phone
+@media (max-width: @breakpoint-mini-max) {
+    .indicator{
+        background-position: 0 0;
+    }
+}
+
+// Small
+@media (max-width: @breakpoint-small-max) and (min-width: @breakpoint-small){
+    .indicator{
+        background-position: -280px 0;
+    }
+}
+
+// Medium
+@media (max-width: @breakpoint-medium-max) and (min-width: @breakpoint-medium){
+    .indicator{
+        background-position: -210px 0;
+    }
+}
+
+// Large
+@media (max-width: @breakpoint-large-max) and (min-width: @breakpoint-large){
+    .indicator{
+        background-position: -350px 0;
+    }
+}
+
+// xLarge
+@media (min-width: @breakpoint-xlarge){
+    .indicator{
+        background-position: -420px 0;
+    }
+}
