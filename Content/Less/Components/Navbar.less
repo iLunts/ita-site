@@ -77,9 +77,9 @@
         width: 150px;
     }
 
-    // Element 'navbar__burger'
+    // Element 'navbar__burder'
     &__burger{
-        font-size: 20px;
+        font-size: 2.2rem;
     }
 
     // Element 'navbar__nav'
@@ -139,6 +139,17 @@
         &__brand img{
             width: 120px;
             margin-top: 3px;
+        }
+
+        // Element 'navbar__nav'
+        &__nav{
+            & > li{
+                & > a{
+                    padding: 0;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
         }
     }
 }
