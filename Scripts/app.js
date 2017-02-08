@@ -1,9 +1,6 @@
 'use strict';
 
-var app = angular.module('site', [
-    'ngRoute',
-    'site.home'
-]);
+var app = angular.module('site', ['ngRoute']);
 
 app.config(['$locationProvider', '$routeProvider', function ($locationProvider, routeProvider) {
     $locationProvider.html5Mode({

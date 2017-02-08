@@ -3,3 +3,4 @@ Thumbs.db
 ehthumbs.db
 bower_conponents
 node_modules
+scripts/app.min.js
