@@ -1,0 +1,27 @@
+{
+  "name": "ita-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.2",
+    "jquery": "^3.1.1",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iLunts/ita-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iLunts/ita-site/issues"
+  },
+  "homepage": "https://github.com/iLunts/ita-site#readme"
+}

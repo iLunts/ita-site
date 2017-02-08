@@ -1,278 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app>
+<html lang="en" data-ng-app="site">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="docs/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" href="/Content/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="/content/img/apple-touch-icon.png">
     <title>ITA.by</title>
 
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="Scripts/app.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/owl.carousel/src/js/owl.carousel.js"></script>
-    <script src="Scripts/Scripts.js"></script>
-
     <!-- Indicator screen size -->
-    <link rel="stylesheet" href="Content/css/components/indicator.css">
+    <link rel="stylesheet" href="content/css/components/indicator.css">
 
     <link rel="stylesheet" href="bower_components/owl.carousel/src/css/owl.carousel.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/src/css/owl.theme.default.css">
     <!-- end Components -->
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="Content/css/components/reset.css">
-    <link rel="stylesheet" href="Content/css/components/top-menu.css">
-    <link rel="stylesheet" href="Content/css/components/dropdown.css">
-    <link rel="stylesheet" href="Content/css/components/button.css">
-    <link rel="stylesheet" href="Content/css/components/grid.css">
-    <link rel="stylesheet" href="Content/css/components/block.css">
-    <link rel="stylesheet" href="Content/css/components/slider.css">
-    <link rel="stylesheet" href="Content/css/components/icons.css">
-    <link rel="stylesheet" href="Content/css/components/list.css">
-    <link rel="stylesheet" href="Content/css/components/text.css">
-    <link rel="stylesheet" href="Content/css/components/input.css">
-    <link rel="stylesheet" href="Content/css/components/utilits.css">
-    <link rel="stylesheet" href="Content/css/components/text.css">
-    <link rel="stylesheet" href="Content/css/components/reset-plugins.css">
+    <link rel="stylesheet" href="/content/css/components/reset.css">
+    <link rel="stylesheet" href="/content/css/components/top-menu.css">
+    <link rel="stylesheet" href="/content/css/components/dropdown.css">
+    <link rel="stylesheet" href="/content/css/components/button.css">
+    <link rel="stylesheet" href="/content/css/components/grid.css">
+    <link rel="stylesheet" href="/content/css/components/block.css">
+    <link rel="stylesheet" href="/content/css/components/slider.css">
+    <link rel="stylesheet" href="/content/css/components/icons.css">
+    <link rel="stylesheet" href="/content/css/components/list.css">
+    <link rel="stylesheet" href="/content/css/components/text.css">
+    <link rel="stylesheet" href="/content/css/components/input.css">
+    <link rel="stylesheet" href="/content/css/components/utilits.css">
+    <link rel="stylesheet" href="/content/css/components/text.css">
+    <link rel="stylesheet" href="/content/css/components/reset-plugins.css">
 
-    <link rel="stylesheet" href="Content/css/main.css">
-    <link rel="stylesheet" href="Content/css/xlarge.css">
-    <link rel="stylesheet" href="Content/css/large.css">
-    <link rel="stylesheet" href="Content/css/medium.css">
-    <link rel="stylesheet" href="Content/css/small.css">
+    <link rel="stylesheet" href="content/css/main.css">
+    <link rel="stylesheet" href="content/css/xlarge.css">
+    <link rel="stylesheet" href="content/css/large.css">
+    <link rel="stylesheet" href="content/css/medium.css">
+    <link rel="stylesheet" href="content/css/small.css">
 </head>
 <body>
-    <nav class="top-menu">
-        <div class="container container--center">
-            <div class="grid grid--small">
-                <div class="col--lg-2-10 col--md-2-10 col--sm-2-5">
-                    <a href="/">
-                        <img class="top-menu__logo" src="Content/img/logo.png" title="ITA alliance" alt="ITA alliance">
-                    </a>
-                </div>
-                <ul class="col--lg-8-10 col--md-8-10 col--sm-3-5 navbar__nav text--right">
-                    <li class="dropdown hidden--small">
-                        <a href="#">О компании</a>
-                        <div class="dropdown__content">
-                            <a href="#">О компании</a>
-                            <a href="#">Наша команда</a>
-                            <a href="#">Новости</a>
-                            <a href="#">Комфорт в ITA</a>
-                            <a href="#">Вакансии</a>
-                        </div>
-                    </li>
-                    <li class="dropdown hidden--small">
-                        <a href="#">Партнерам</a>
-                        <div class="dropdown__content dropdown__content--large">
-                            <a href="#">Сотрудничество с ITA</a>
-                            <a href="#">Международное сотрудничество</a>
-                            <a href="#">Как мы работаем</a>
-                            <a href="#">Агентствам недвижимости</a>
-                        </div>
-                    </li>
-                    <li class="hidden--small"><a href="#">Услуги</a></li>
-                    <li class="hidden--small"><a href="#">Контакты</a></li>
-                    <li class="navbar__search hidden--small">
-                        <input type="search" class="input input--search input--mini border--rounded col--1-1">
-                    </li>
-                    <li class="hidden--small">
-                        <button class="button button--lang"><img class="large--visible" src="/Content/img/svg/flag/ru.svg" width="15" alt=""><span>RUS</span></button>
-                    </li>
-                    <li class="visible--small">
-                        <a href="#" class="navbar__burger">
-                            <i class="icon-menu"></i>
-                        </a>
-                    </li>
-                </ul>
 
-            </div>
-
-            <a href="#offcanvas" class="navbar__toggle small--visible"></a>
-
-        </div>
-    </nav>
+    <div data-ng-include="'view/menu/top-menu.html'"></div>
 
     <main class="page-wrap">
-
-        <!-- Slider -->
-        <div class="owl-carousel slider-main">
-            <div class="owl-item slider__item slider__item--1">
-                <div class="slider__item--overlay"></div>
-                <div class="slider__item__text">
-                    <div class="container container--center">
-                        <div class="grid">
-                            <div class="col--lg-7-10 col--md-2-3 col--sm-1-1">
-                                <p class="slider__item--text-sub">агентства недвижимости</p>
-                                <p class="text--h1 text--bold">ESTATE <sup>&#174;</sup></p>
-                                <p class="text--h3">- это «новое слово» в работе агентств недвижимости!</p>
-                                <!-- <a href="#" class="button--slider margin--top-large">Подробнее</a> -->
-                            </div>
-                            <div class="col--lg-3-10 col--md-1-3 col--sm-1-1 hidden--small">
-                                <img src="/Content/img/slider/nexus-splite.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item slider__item slider__item--2">
-                <div class="slider__item--overlay"></div>
-                <div class="slider__item__text">
-                    <div class="container container--center">
-                        <div class="grid">
-                            <div class="col--lg-7-10 col--md-2-3 col--sm-1-1">
-                                <p class="slider__item--text-sub">управление магазинами</p>
-                                <p class="text--h1 text--bold">Streamliner <sup>&#174;</sup></p>
-                                <p class="text--h3">– «разложи свои задачи по полочкам» -</p>
-                                <!-- <a href="#" class="button--slider margin--top-large">Подробнее</a> -->
-                            </div>
-                            <div class="col--lg-3-10 col--md-1-3 col--sm-1-1 hidden--small">
-                                <img src="/Content/img/slider/nexus-splite.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="block block--default">
-            <div class="main container container--center">
-                <div class="grid">
-                    <div class="col--1-1 text--center">
-                        <h1 class="main__title">Мы разрабатываем программное обеспечение</h1>
-                    </div>
-                </div>
-                <ul class="grid grid-col--lg-1-3 grid-col--md-1-3 grid-col--1-1 main__list">
-                    <li>
-                        <i class="icon-tablet"></i>
-                        <p>Электронной и <br>мобильной коммерции</p>
-                    </li>
-                    <li>
-                        <i class="icon-briefcase"></i>
-                        <p>Финансового и <br>банковского сектора</p>
-                    </li>
-                    <li>
-                        <i class="icon-apartment"></i>
-                        <p>Агенств <br>недвижемости</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="block block--default" >
-            <div class="main container container--center">
-                <div class="grid">
-                    <div class="col--1-1 text--center">
-                        <h1 class="main__title">Почему мы?</h1>
-                    </div>
-                </div>
-                <ul class="grid grid--large main__list--check">
-                    <li class="col--1-1 col--lg-1-4 col--md-1-2 col--sm-1-1">
-                        <i class="icon-done"></i>
-                        <p>Резиденты Парка Высоких Технологий</p>
-                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</span>
-                    </li>
-                    <li class="col--1-1 col--lg-1-4 col--md-1-2 col--sm-1-1">
-                        <i class="icon-done"></i>
-                        <p>Участники клуба Microsoft BizSpark</p>
-                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</span>
-                    </li>
-                    <li class="col--1-1 col--lg-1-4 col--md-1-2 col--sm-1-1">
-                        <i class="icon-done"></i>
-                        <p>Участники программы Microsoft Partner Network</p>
-                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</span>
-                    </li>
-                    <li class="col--1-1 col--lg-1-4 col--md-1-2 col--sm-1-1">
-                        <i class="icon-done"></i>
-                        <p>Более 50 проектов успешно запущенными во всем мире</p>
-                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</span>
-                    </li>
-                </ul>
-
-                <hr class="margin--v-large">
-            </div>
-        </div>
-
-        <div class="partner block block--gray-light">
-
-            <div class="partner container container--center">
-                <div class="partner__title">
-                    Партнеры
-                </div>
-                <ul class="partner__list grid grid-col--1-5">
-                    <li>
-                        <img src="/Content/img/partner/epam.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="/Content/img/partner/r-style.png" alt="">
-                    </li>
-                    <li>
-                        <img src="/Content/img/partner/microsoft-bizspark.png" alt="">
-                    </li>
-                    <li>
-                        <img src="/Content/img/partner/microsoft-partner.png" alt="">
-                    </li>
-                    <li>
-                        <img src="/Content/img/partner/htp.png" alt="">
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <ng-view></ng-view>
     </main>
 
-    <footer class="footer margin--top">
-        <div class="container container--center">
-            <div class="grid">
-                <div class="col--lg-1-4 col--md-1-4 col--sm-1-1">
-                    <a href="/"><img src="Content/img/logo.png" title="ITA alliance" alt="ITA alliance" width="150"></a>
-                    <p class="text--small text--muted">Мы быстрорастущая аутсорсинговая компания, офшорного программирования</p>
-                </div>
-                <div class="col--lg-3-4 col--md-3-4">
-                    <ul class="grid grid--small hidden--small">
-                        <li class="col--2-10">
-                            <ul class="list list__footer">
-                                <li><span class="text--bold">О компании</span></li>
-                                <li><a href="#" class="">Наша команда</a></li>
-                                <li><a href="#" class="">Новости</a></li>
-                                <li><a href="#" class="">Вакансии</a></li>
-                            </ul>
-                        </li>
-                        <li class="col--3-10">
-                            <ul class="list list__footer">
-                                <li><span class="text--bold">Адрес</span></li>
-                                <li><a href="#" class="">Республика Беларусь</a></li>
-                                <li><a href="#" class="">Ул. Домбровская,9, офис 8.3.3</a></li>
-                            </ul>
-                        </li>
-                        <li class="col--3-10">
-                            <ul class="list list__footer">
-                                <li><span class="text--bold">Телефоны</span></li>
-                                <li><a href="tel:+375173880491" class="">+375-17-388-04-91</a></li>
-                                <li><a href="tel:+19172009202" class="">+1-917-200-92-02</a></li>
-                                <li><a href="tel:+375173880492" class="">Факс: +375-17-388-04-92</a></li>
-                            </ul>
-                        </li>
-                        <li class="col--2-10">
-                            <ul class="list list__footer">
-                                <li><span class="text--bold">Почта</span></li>
-                                <li><a href="mailto:info@ita-dev.com" class="">info@ita-dev.com</a></li>
-                                <li><a href="mailto:sales@ita-dev.com" class="">sales@ita-dev.com</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="margin--top-small">
-            <div class="grid">
-                <div class="col--1-1 text--center text--muted text--small">
-                    <p class="margin--v">© 2016 ITA-Dev.com</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div data-ng-include="'view/footer/index.html'"></div>
 
-<!-- Indicator screen size -->
-<div class="indicator"></div>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+
+    <script src="scripts/app.js"></script>
+
+    <!-- view js -->
+    <script src="view/home/homeCtrl.js"></script>
+
+    <!-- <script src="bower_components/owl.carousel/src/js/owl.carousel.js"></script> -->
+    <!-- <script src="scripts/Scripts.js"></script> -->
 
 </body>
+
 </html>
