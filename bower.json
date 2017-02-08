@@ -17,9 +17,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.1"
+
   },
   "devDependencies": {
-    "owl.carousel": "OwlCarousel2#^2.0.0-beta.3"
+    "owl.carousel": "OwlCarousel2#^2.0.0-beta.3",
+    "angular": "^1.5.1"
   }
 }

@@ -1,4 +1,5 @@
-// out: ../../css/components/navbar.css, compress: true
+// out: ../../css/components/top-menu.css, compress: true
+@import 'variables.less';
 // Name:            Navbar
 // Description:     Defines styles for list Navbar
 //
@@ -14,61 +15,45 @@
 //                  `navbar--navbar`
 //                  `navbar--offcanvas`
 //
-// States:          `active`
-//                  `parent`
-//                  `open`
-//                  `touch`
-//
-// Uses:            Icon: FontAwesome or icoMoon
-//
-// Used by:         Panel
-//                  Dropdown
-//
-// Markup:
-//
-// <!-- nav -->
-// <ul class="navbar">
-//     <li class="active"><a href=""></a></li>
-//     <li><a href=""></a></li>
-// </ul>
-//
-// ========================================================================
+// -------------------------------------------------
+// Block '.top-menu'
+// -------------------------------------------------
+.top-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: @top-menu-height;
+    background: @top-menu-background;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    z-index: 10;
 
+    // -------------------------------------------------
+    // All elements
+    // -------------------------------------------------
 
-// Variables
-// ========================================================================
-
-@navbar-background:                                rgba(255, 255, 255, 1);
-@navbar-height:                                    54px;
-@navbar-padding:                                   15px;
-
-@nav-padding:                                      15px;
-
-
-@nav-padding-vertical:                             5px;
-@nav-padding-horizontal:                           15px;
-
-/* ========================================================================
-   Component: Nav
- ========================================================================== */
-
-.nav{
-    border: none;
+    // Element '.top-menu .top-menu__logo'
+    & &__logo{
+        display: inline-block;
+        height: @top-menu-height;
+        padding: 5px 0;
+    }
 }
+
 
 .navbar{
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    height: @navbar-height;
-    background: @navbar-background;
+    height: @top-menu-height;
+    background: @top-menu-background;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     z-index: 10;
 
     // Element 'navbar__nav'
     &__brand{
-        width: (@navbar-height * 3);
+        width: (@top-menu-height * 3);
         padding: (@nav-padding / 3) 0;
     }
 
@@ -91,12 +76,12 @@
             display: inline-block;
             & > a{
                 position: relative;
-                height: @navbar-height;
+                height: @top-menu-height;
                 display: inline-block;
                 padding: 0 (@nav-padding);
                 text-decoration: none;
                 color: #171717;
-                line-height: @navbar-height;
+                line-height: @top-menu-height;
             }
 
             & > .button--lang{
