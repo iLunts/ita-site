@@ -98,6 +98,7 @@
             margin: 0 0 (@margin-padding / 4) !important;
         }
     }
+
     // Top
     &--t {
         margin: @margin-padding 0 0 0 !important;
@@ -114,6 +115,7 @@
             margin-top: 0 !important;
         }
     }
+
     // Right
     &--r {
         margin: 0 @margin-padding 0 0 !important;
@@ -124,26 +126,29 @@
             margin: 0 (@margin-padding / 4) 0 0;
         }
     }
+
     // Auto
     &--auto{
         margin: 0 auto;
     }
-    // Vertical
-    &--v-5 {
-        margin: 5px 0;
-    }
 
-    // Vertical large
-    &--v-large{
-        margin: (@margin-padding * 2) 0 !important;
-    }
+    // Vertical margin
     &--v{
         margin: @margin-padding 0 !important;
+
+        &-lg{
+            margin: (@margin-padding * 2) 0 !important;
+        }
+
+        &-sm{
+            margin: (@margin-padding / 2) 0 !important;
+        }
+
+        &-5 {
+            margin: 5px 0;
+        }
     }
 
-    &--v-small{
-        margin: (@margin-padding / 2) 0 !important;
-    }
     // Reset
     &--reset {
         margin: 0 !important;
