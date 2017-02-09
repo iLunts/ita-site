@@ -1,9 +1,11 @@
 app.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider.when("/", {
-            templateUrl: "view/home/index.html",
-            controller: "homeCtrl"
+        $routeProvider.when("/vacancies", {
+            templateUrl: "view/vacancies/index.html",
+            controller: "vacanciesCtrl"
         });
 
         $routeProvider.otherwise({ redirectTo: "/" });
     }
 ]);
+
+app.controller('vacanciesCtrl', function($scope){});

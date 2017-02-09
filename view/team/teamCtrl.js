@@ -1,9 +1,11 @@
 app.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider.when("/", {
-            templateUrl: "view/home/index.html",
-            controller: "homeCtrl"
+        $routeProvider.when("/team", {
+            templateUrl: "view/team/index.html",
+            controller: "teamCtrl"
         });
 
         $routeProvider.otherwise({ redirectTo: "/" });
     }
 ]);
+
+app.controller('teamCtrl', function($scope){});

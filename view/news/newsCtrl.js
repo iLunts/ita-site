@@ -1,9 +1,11 @@
 app.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider.when("/", {
-            templateUrl: "view/home/index.html",
-            controller: "homeCtrl"
+        $routeProvider.when("/news", {
+            templateUrl: "view/news/index.html",
+            controller: "newsCtrl"
         });
 
         $routeProvider.otherwise({ redirectTo: "/" });
     }
 ]);
+
+app.controller('newsCtrl', function($scope){});
