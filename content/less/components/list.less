@@ -1,36 +1,38 @@
 // out: ../../css/components/list.css, compress: true
+@import 'variables.less';
 // Name:            List
 // Description:     Defines styles to create layouts with list
 //
 // Component:       `list__*`
 //
-//
-// ========================================================================
-
-@list-footer-padding:                     3px;
-
-/* ========================================================================
-   Component: List
- ========================================================================== */
-
+// ----------------------------------------------------
+// Block '.list'
+// ----------------------------------------------------
 .list {
+    position: relative;
 
-}
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
 
+    // Modificator '.list.list--footer'
+    &&--footer{
+        & > li{
+            padding: @list-footer-padding;
+            & > a{
+                color: rgba(0, 0, 0, 0.6);
+                transition: all 200ms;
 
-
-
-// Element 'list__footer'
-.list__footer{
-    & > li{
-        padding: @list-footer-padding;
-        & > a{
-            color: rgba(0, 0, 0, 0.6);
-            transition: all 200ms;
-
-            &:hover{
-                color: rgba(0, 0, 0, 1);
+                &:hover{
+                    color: rgba(0, 0, 0, 1);
+                }
             }
         }
     }
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+
 }

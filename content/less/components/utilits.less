@@ -9,22 +9,10 @@
 // Modifiers:       `float--left`
 //                  `float--right`
 //
-// *************** Variables ********************
-// ~~ margin ~~
-@margin-padding--small: @margin-padding / 2;
-@margin-padding: 20px;
-@margin-pading--big: (@margin-padding / 2) + @margin-padding;
-
-/// Icon size
-@icon-small-font-size:                          150%;
-@icon-medium-font-size:                         200%;
-@icon-large-font-size:                          250%;
-
-@icon-small-vertical-align:                     -10%;
-@icon-medium-vertical-align:                    -16%;
-@icon-large-vertical-align:                     -22%;
-// ****************** Base ***********************
-.float {
+// -------------------------------------------------------
+// Block '.f' ~ float
+// -------------------------------------------------------
+.f {
     &--left {
         float: left;
     }
@@ -33,71 +21,62 @@
     }
 }
 
-.border--none{
-    border: none !important;
-}
-// ******************************************************************
-// Component:       `text`
-//
-// Modifiers:       `text--left`
-//                  `text--right`
-//                  `text--center`
-//
+// -------------------------------------------------------
+// Block '.text'
+// -------------------------------------------------------
 .text {
-    &--center {
+    &--c {
         text-align: center !important;
     }
-    &--right {
+    &--r {
         text-align: right !important;
     }
-    &--left {
+    &--l {
         text-align: left !important;
     }
 }
-// ******************************************************************
-// Component:       `border`
-//
-// Modifiers:       `border--radius`
-//                  `border--rounded`
-//
+
+// -------------------------------------------------------
+// Block '.border'
+// -------------------------------------------------------
 .border {
+
+    // Modificator '.border--radius'
     &--radius {
         border-radius: 4px;
     }
+
+    // Modificator '.border--rounded'
     &--rounded {
         border-radius: 500px !important;
     }
+
+    // Modificator '.border--none'
+    &--none{
+        border: none !important;
+    }
 }
-// HR line
+
+// -------------------------------------------------------
+// Block '.hr'
+// -------------------------------------------------------
 .hr {
     border-top: 2px solid #ddd;
-    &--small {
+
+    // Modificator '.hr--small'
+    &--sm {
         border-top: 1px solid #ddd;
     }
 }
-// ******************************************************************
-// Component:       `margin`
-//
-// Modifiers:       `margin--top`
-//                  `margin--top-small`
-//                  `margin--top-mini`
-//
-//                  `margin--right-small`
-//                  `margin--right-mini`
-//
-//                  `margin--bottom`
-//
-//                  `margin--auto`
-//
-//                  `margin--v-5`
-//
-//                  `margin--reset`
-//
-.margin {
+
+// -------------------------------------------------------
+// Block '.m' ~ margin
+// -------------------------------------------------------
+.m {
     margin: @margin-padding 0 !important;
 
     // Small
-    &--small{
+    &--sm{
         margin: (@margin-padding / 2) 0 !important;
     }
     // Mini
@@ -106,7 +85,7 @@
     }
 
     // Full-small
-    &--full-small{
+    &--full-sm{
         margin: (@margin-padding / 2) !important;
     }
     // Full-mini
@@ -115,12 +94,12 @@
     }
 
     // Bottom
-    &--bottom {
+    &--b {
         margin: 0 0 @margin-padding !important;
-        &-large {
+        &-lg {
             margin: 0 0 (@margin-padding * 2) !important;
         }
-        &-small {
+        &-sm {
             margin: 0 0 (@margin-padding / 2) !important;
         }
         &-mini {
@@ -128,12 +107,12 @@
         }
     }
     // Top
-    &--top {
+    &--t {
         margin: @margin-padding 0 0 0 !important;
-        &-large {
+        &-lg {
             margin: (@margin-padding * 2) 0 0 0 !important;
         }
-        &-small {
+        &-sm {
             margin: (@margin-padding / 2) 0 0 0 !important;
         }
         &-mini {
@@ -144,9 +123,9 @@
         }
     }
     // Right
-    &--right {
+    &--r {
         margin: 0 @margin-padding 0 0 !important;
-        &-small {
+        &-sm {
             margin: 0 (@margin-padding / 2) 0 0;
         }
         &-mini {
@@ -179,57 +158,23 @@
     }
 }
 
-// Padding
-.padding{
+// -------------------------------------------------------
+// Block '.p' ~ padding
+// -------------------------------------------------------
+.p{
 
-    // Modificator `padding--reset`
+    // Modificator `.p--reset`
     &--reset{
         padding: 0 !important;
     }
 }
 
-// Component:       `icon`
-//
-// Modifiers:       `icon--big`
-//                  `icon--small`
-//                  `icon--medium`
-//                  `icon--mini`
-//
-// ************** Variables **************
-
-@icon-height:                 15px;
-
-// ***************************************
-
-.icon{
-    position: relative;
-    display: inline-block;
-    height: @icon-height;
-    width: @icon-height;
-    line-height: @icon-height;
-    font-size: @icon-height;
-
-    // Modificators `.icon--md`
-    &--md{
-        height: @icon-height+5;
-        width: @icon-height+5;
-        line-height: @icon-height+5;
-        font-size: @icon-height+5;
-    }
-
-    // Modificators `.icon--lg`
-    &--lg{
-        height: @icon-height*2;
-        width: @icon-height*2;
-        line-height: @icon-height*2;
-        font-size: @icon-height*2;
-    }
-}
 
 // --------------------------------------------------------
 // Block `.cursor`
 // --------------------------------------------------------
 .cursor{
+
     // Modificator `cursor--pointer`
     &--pointer{
         cursor: pointer;
@@ -242,19 +187,19 @@
 .icon{
 
     // Modificator '.icon--sm'
-    .icon--sm {
+    &--sm {
         font-size: @icon-small-font-size;
         vertical-align: @icon-small-vertical-align;
     }
 
     // Modificator '.icon--md'
-    .icon--md {
+    &--md {
         font-size: @icon-medium-font-size;
         vertical-align: @icon-medium-vertical-align;
     }
 
     // Modificator '.icon--lg'
-    .icon--lg {
+    &--lg {
         font-size: @icon-large-font-size;
         vertical-align: @icon-large-vertical-align;
     }

@@ -1,1 +1,1 @@
-.list__footer>li{padding:3px}.list__footer>li>a{color:rgba(0,0,0,0.6);transition:all 200ms}.list__footer>li>a:hover{color:#000}
+.list{position:relative}.list.list--footer>li{padding:3px}.list.list--footer>li>a{color:rgba(0,0,0,0.6);transition:all 200ms}.list.list--footer>li>a:hover{color:#000}
