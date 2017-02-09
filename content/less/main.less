@@ -32,93 +32,12 @@ body {
 
 // Block '.main'
 .main {
-    &__title {
-        font-size: 2.6rem;
-        line-height: 2.8rem;
-        color: #283142;
-        font-weight: 100;
-    }
 
-    &__list {
-        text-align: center;
-
-        & > li {
-            position: relative;
-
-            & > i {
-                display: inline-block;
-                width: @main-list-height;
-                height: @main-list-height;
-                border-radius: @main-list-height;
-                background: #fff;
-                color: #16A7DB;
-                text-align: center;
-                font-size: 50px;
-                line-height: @main-list-height;
-                box-shadow: 0 10px 40px 0 rgba(0,0,0,0.2);
-                transition: all 300ms;
-            }
-
-            & + li {
-                &:before {
-                    content: '';
-                    position: absolute;
-                    left: -70px;
-                    top: 70px;
-                    width: 45%;
-                    height: 4px;
-                    border-radius: 10px;
-                    background: #f3f3f3;
-                }
-            }
-
-            & > p {
-                margin: 20px auto 0;
-                color: #222222;
-                font-size: 16px;
-                line-height: 22px;
-                font-weight: 700;
-            }
-
-            &:hover > i {
-                box-shadow: 0 20px 80px 5px rgba(0, 0, 0, 0.2);
-            }
-        }
-
-        // Element '.main__list--check'
-        &--check {
-            & > li {
-                position: relative;
-                margin-top: @main-list-ckeck-icon-height;
-
-                & > i {
-                    position: absolute;
-                    left: 50%;
-                    top: -40px;
-                    margin-left: -(@main-list-ckeck-icon-height / 2);
-                    width: @main-list-ckeck-icon-height;
-                    height: @main-list-ckeck-icon-height;
-                    border-radius: @main-list-ckeck-icon-height;
-                    border: 1px solid #ddd;
-                    text-align: center;
-                    font-size: 25px;
-                    line-height: @main-list-ckeck-icon-height;
-                    color: #01b35f;
-                }
-
-                & > p {
-                    margin: 8px 0 0;
-                    font-size: 14px;
-                    line-height: 18px;
-                    font-weight: 700;
-                }
-
-                & > span {
-                    display: inline-block;
-                    margin-top: 10px;
-                    color: #999;
-                }
-            }
-        }
-    }
+    // Element '.main__title'
+    // &__title {
+    //     font-size: 2.6rem;
+    //     line-height: 2.8rem;
+    //     color: #283142;
+    //     font-weight: 100;
+    // }
 }

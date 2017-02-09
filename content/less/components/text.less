@@ -8,49 +8,61 @@
 @text-color-blue:            #0091ca;
 
 // ******************* Base ******************
-.text {
+.t {
+
+    // Modificator '.t--muted'
     &--muted {
         color: @text-color-muted;
     }
-    // ***** Position
-    &--right {
+
+    // Modificator '.t--r'
+    &--r {
         text-align: right;
     }
-    &--left {
+
+    // Modificator '.t--l'
+    &--l {
         text-align: left;
     }
-    &--center {
+
+    // Modificator '.t--c'
+    &--c {
         text-align: center !important;
     }
 
-    // Modificator '.text--sm'
+    // Modificator '.t--light'
+    &--light{
+        font-weight: 100 !important;
+    }
+
+    // Modificator '.t--sm'
     &--sm {
         font-size: 75%;
         line-height: 1rem;
     }
 
-    // Modificator '.text--md'
+    // Modificator '.t--md'
     &--md {
         font-size: 85%;
         line-height: 1rem;
     }
 
-    // Modificator '.text--success'
+    // Modificator '.t--success'
     &--success {
         color: #8cc14c !important;
     }
 
-    // Modificator '.text--danger'
+    // Modificator '.t--danger'
     &--danger {
         color: #da314b;
     }
 
-    // Modificator '.text--bold'
+    // Modificator '.t--bold'
     &--bold {
         font-weight: 700;
     }
 
-    // Modificator '.text--title'
+    // Modificator '.t--title'
     &--title {
         font-weight: 900;
         text-transform: uppercase;
@@ -59,12 +71,12 @@
         color: #171717;
     }
 
-    // Modificator '.text--light'
+    // Modificator '.t--light'
     &--light {
         font-weight: 100;
     }
 
-    // Modificator '.text--truncate'
+    // Modificator '.t--truncate'
     &--truncate {
         overflow: hidden;
         text-overflow: ellipsis;
