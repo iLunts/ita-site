@@ -1,5 +1,6 @@
 // out: ../css/main.css, compress: true
-@import 'components/variables.less'; // -------------------------------------------
+@import 'components/variables.less';
+// -------------------------------------------
 
 html{
     font-size: 16px;
@@ -8,8 +9,7 @@ html{
 }
 
 body {
-    padding-top: 27px;
-    // height: 100%;
+    padding-top: @top-menu-height;
 }
 
 // Element '.page-wrap'
@@ -23,11 +23,14 @@ body {
     }
 }
 
+// Block '.footer'
 .footer,
 .page-wrap:after {
     height: @main-sticky-footer-height;
 }
 
+
+// Block '.main'
 .main {
     &__title {
         font-size: 2.6rem;
@@ -70,7 +73,6 @@ body {
             }
 
             & > p {
-                // width: 300px;
                 margin: 20px auto 0;
                 color: #222222;
                 font-size: 16px;
@@ -82,7 +84,8 @@ body {
                 box-shadow: 0 20px 80px 5px rgba(0, 0, 0, 0.2);
             }
         }
-        // Element 'main__list--check'
+
+        // Element '.main__list--check'
         &--check {
             & > li {
                 position: relative;
@@ -117,24 +120,5 @@ body {
                 }
             }
         }
-    }
-}
-// Block 'partner'
-.partner {
-    position: relative;
-    // Element 'partner__title'
-    &__title {
-        position: absolute;
-        font-size: 90px;
-        color: #fff;
-        top: -40px;
-        text-transform: uppercase;
-        font-weight: 700;
-        z-index: 1;
-    }
-    // Element 'partner__title'
-    &__list {
-        position: relative;
-        z-index: 2;
     }
 }

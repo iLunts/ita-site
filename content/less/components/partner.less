@@ -1,0 +1,31 @@
+// out: ../../css/components/partner.css, compress: true
+// Name:            Partner
+// Description:     Defines styles to create layouts with Partner
+//
+// Component:       '.partner__title'
+//                  '.partner__list'
+//
+//
+// ------------------------------------------------------
+// Block '.partner'
+// ------------------------------------------------------
+.partner {
+    position: relative;
+
+    // Element '.partner .partner__title'
+    & &__title {
+        position: absolute;
+        font-size: 60px;
+        color: #fff;
+        top: -60px;
+        text-transform: uppercase;
+        font-weight: 700;
+        z-index: 1;
+    }
+
+    // Element '.partner .partner__title'
+    & &__list {
+        position: relative;
+        z-index: 2;
+    }
+}

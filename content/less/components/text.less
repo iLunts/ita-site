@@ -22,19 +22,35 @@
     &--center {
         text-align: center !important;
     }
-    &--small {
+
+    // Modificator '.text--sm'
+    &--sm {
         font-size: 75%;
-        line-height: 14px;
+        line-height: 1rem;
     }
+
+    // Modificator '.text--md'
+    &--md {
+        font-size: 85%;
+        line-height: 1rem;
+    }
+
+    // Modificator '.text--success'
     &--success {
         color: #8cc14c !important;
     }
+
+    // Modificator '.text--danger'
     &--danger {
         color: #da314b;
     }
+
+    // Modificator '.text--bold'
     &--bold {
         font-weight: 700;
     }
+
+    // Modificator '.text--title'
     &--title {
         font-weight: 900;
         text-transform: uppercase;
@@ -42,16 +58,22 @@
         line-height: 3rem;
         color: #171717;
     }
+
+    // Modificator '.text--light'
     &--light {
         font-weight: 100;
     }
+
+    // Modificator '.text--truncate'
     &--truncate {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+
+    // -----------------------------------------------------
     // Modifiers:       `text--h*`
-    // ***** h1-h6
+    // -----------------------------------------------------
     &--h1 {
         font-size: 3rem;
         line-height: 4rem;
