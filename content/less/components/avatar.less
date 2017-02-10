@@ -1,0 +1,51 @@
+// out: ../../css/components/avatar.css, compress: true
+@import 'variables.less';
+// Name:            Avatar
+// Description:     Defines styles to create layouts with avatar
+//
+// Component:       `avatar__*`
+//
+// ---------------------------------------------------
+// Block '.avatar'
+// ---------------------------------------------------
+.avatar {
+    display: inline-block;
+    width: @avatar-height;
+    height: @avatar-height;
+    border-radius: @avatar-height;
+    line-height: @avatar-height;
+    text-align: center;
+    color: #ddd;
+    vertical-align: middle;
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+    // Modificator '.avatar.avatar--md'
+    &&--md{
+        width: @avatar-height-md;
+        height: @avatar-height-md;
+        border-radius: @avatar-height-md;
+        font-size: @avatar-font-size-md;
+    }
+
+    // Modificator '.avatar.avatar--lg'
+    &&--lg{
+        width: @avatar-height-lg;
+        height: @avatar-height-lg;
+        line-height: @avatar-height-lg;
+        border-radius: @avatar-height-lg;
+        font-size: @avatar-font-size-lg;
+    }
+
+    // Modificator '.avatar.avatar--border'
+    &&--border{
+        border: 3px solid #ddd;
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.045);
+    }
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+}

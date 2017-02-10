@@ -5,10 +5,13 @@ var app = angular.module('site', ['ngRoute']);
 app.config(['$locationProvider', '$routeProvider', function ($locationProvider, routeProvider) {
     $locationProvider.html5Mode({
         enabled: true,
-        requireBase: false
+        requireBase: false,
+        rewriteLinks: true
     });
+}]);
 
-    // $routeProvider.otherwise({ redirectTo: "/" });
+app.config(["$routeProvider", function ($routeProvider) {
+    $routeProvider.otherwise({ redirectTo: "/" });
 }]);
 
 app.directive("owlCarousel", function() {

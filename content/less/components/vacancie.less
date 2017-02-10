@@ -1,0 +1,33 @@
+// out: ../../css/components/vacancie.css, compress: true
+@import 'variables.less';
+// Name:            Vacancie
+// Description:     Defines styles to create layouts with vacancie
+//
+// Component:       `vacancie__*`
+//
+// ---------------------------------------------------
+// Block '.vacancie'
+// ---------------------------------------------------
+.vacancie {
+
+    // Element '.vacancie .vacancie__title'
+    & &__title{
+        color: #171717;
+        font-weight: 500;
+        margin: 0 0 5px 0;
+    }
+
+    // Element '.vacancie .vacancie__price'
+    & &__price{
+        border-radius: 200px;
+        padding: 0 30px;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+
+    // Element '.vacancie .vacancie__list'
+    & &__list{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+}

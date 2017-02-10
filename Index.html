@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="bower_components/owl.carousel/src/css/owl.theme.default.css">
     <!-- end Components -->
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet'> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="/web-src/css/style.min.css">
 
 </head>
@@ -27,7 +28,7 @@
     <!-- Slider -->
     <div data-ng-controller="sliderCtrl">
         <data-owl-carousel class="owl-carousel slider-main" data-options="{items:1, loop:true, autoplay: true, autoplaySpeed: 1000}">
-            <div owl-carousel-item data-ng-repeat="item in slider" class="owl-item slider__item slider__item--1">
+            <div owl-carousel-item data-ng-repeat="item in slider" class="owl-item slider__item">
                 <div class="slider__item--overlay"></div>
                 <div class="slider__item__text">
                     <div class="container container--center">

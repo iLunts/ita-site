@@ -12,20 +12,40 @@
 .partner {
     position: relative;
 
-    // Element '.partner .partner__title'
-    & &__title {
-        position: absolute;
-        font-size: 60px;
-        color: #fff;
-        top: -60px;
-        text-transform: uppercase;
-        font-weight: 700;
-        z-index: 1;
-    }
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
 
     // Element '.partner .partner__title'
     & &__list {
         position: relative;
         z-index: 2;
+    }
+
+    // Element '.partner .partner__title'
+    & &__desc{
+        width: 50%;
+        margin: 0 auto 30px;
+        text-align: center;
+
+        // Element '.partner .partner__title .title'
+        & .title{
+            font-size: 3rem;
+            font-weight: 300;
+            color: #171717;
+            margin-bottom: 20px;
+        }
+
+        // Element '.partner .partner__title .text'
+        & .text{
+            font-size: 0.8rem;
+            color: #bbb;
+        }
     }
 }

@@ -2,17 +2,106 @@
     <div class="container">
         <div class="grid grid--small">
             <div class="col--1-1">
-                <h1 class="t--h1 t--light">ВАКАНСИИ</h1>
+                <h1 class="page__title">ВАКАНСИИ</h1>
 
                 <p><img src="" alt=""></p>
-                <p>ITA молодая и быстроразвивающаяся компания, мы всегда открыты для нового диалога с молодыми, амбициозными специалистами, мы рады будем видеть Вас в нашей команде.  Для того, чтобы стать сотрудником ITA, выберите интересующую вас вакансию и используйте форму для связи с нами. В течение нескольких дней специалисты отдела по работе с персоналом пригласят вас на собеседование. . Вся процедура занимает не более недели. В том случае, если на сайте вы не находите интересующей вас вакансии, вы можете отправить ваше резюме на наш электронный адрес. Как только у нас появится вакансия, которая соответствует вашим интересам и профессиональному уровню, мы свяжемся с вами.</p>
+                <p class="t--md">ITA молодая и быстроразвивающаяся компания, мы всегда открыты для нового диалога с молодыми, амбициозными специалистами, мы рады будем видеть Вас в нашей команде. Для того, чтобы стать сотрудником ITA, выберите интересующую вас вакансию
+                    и используйте форму для связи с нами. В течение нескольких дней специалисты отдела по работе с персоналом пригласят вас на собеседование. . Вся процедура занимает не более недели. В том случае, если на сайте вы не находите интересующей
+                    вас вакансии, вы можете отправить ваше резюме на наш электронный адрес. Как только у нас появится вакансия, которая соответствует вашим интересам и профессиональному уровню, мы свяжемся с вами.</p>
 
-                <p>
-                    <a href="" class="link">Java Разработчик</a>
+                <div class="grid">
+                    <div class="col--4-10 push--1-10">
+                        <div class="panel panel--shadow vacancie__waranty">
+                            <p class=""><small>ГАРАНТИИ</small></p>
+                            <h2 class="title">Apps and end devices that suit your needs</h2>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
+                        </div>
+                    </div>
+
+                    <div class="col--4-10 push--1-10">
+                        <ul class="grid list vacancie__waranty-list">
+                            <li class="col--1-2 list__item" data-ng-repeat="item in waranty">
+                                <p><i class="icon-{{item.icon}}"></i></p>
+                                <p class="title">{{item.title}}</p>
+                                <p class="text">{{item.text}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="t--c">
+                    <img src="/content/img/vacancies-desktop.png" alt="">
                 </p>
-                <p>
-                    <a href="" class="link">Ведущий Java Разработчик (Руководитель Команды)</a>
-                </p>
+
+                <div class="grid">
+                    <div class="col--8-10 push--1-10">
+                        <div class="panel panel--shadow vacancie m--t-sm" data-ng-repeat="item in list">
+                            <div class="grid grid--sm">
+                                <div class="col--2-10 t--c">
+                                    <span class="avatar avatar--lg avatar--border">
+                                        <i class="icon-briefcase"></i>
+                                    </span>
+
+                                    <p class="m--t-sm">
+                                        <span class="button button--success vacancie__price">{{item.price}}</span>
+                                    </p>
+                                </div>
+                                <div class="col--8-10">
+                                    <p class="vacancie__title">
+                                        <a href="" class="link">{{item.title}}</a>
+                                    </p>
+
+                                    <div class="grid grid--sm">
+                                        <div class="col--1-2">
+                                            <ul class="list list--disk vacancie__list">
+                                                <li class="list__title">
+                                                    Требования:
+                                                </li>
+                                                <li class="list__item">
+                                                    Опыт работы с Java от 2х лет
+                                                </li>
+                                                <li class="list__item">
+                                                    Spring / Spring MVC
+                                                </li>
+                                                <li class="list__item">
+                                                    JavaScript, HTML
+                                                </li>
+                                                <li class="list__item">
+                                                    Хорошее понимание принципов проектирования ПО
+                                                </li>
+                                                <li class="list__item">
+                                                    Уровень английского Intermediate
+                                                </li>
+                                                <li class="list__item">
+                                                    Аналитический склад ума
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col--1-2">
+                                            <ul class="list list--disk vacancie__list">
+                                                <li class="list__title">
+                                                    Преимуществом будет:
+                                                </li>
+                                                <li class="list__item">
+                                                    Знание git
+                                                </li>
+                                                <li class="list__item">
+                                                    Опыт проектирования REST сервисов
+                                                </li>
+                                                <li class="list__item">
+                                                    Опыт работы с NoSQL базами данных
+                                                </li>
+                                                <li class="list__item">
+                                                    Знание Javascript фреймворков (JQuery, AngularJS)
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>

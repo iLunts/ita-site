@@ -1,1 +1,1 @@
-.partner{position:relative}.partner .partner__title{position:absolute;font-size:60px;color:#fff;top:-60px;text-transform:uppercase;font-weight:700;z-index:1}.partner .partner__list{position:relative;z-index:2}
+.partner{position:relative}.partner .partner__list{position:relative;z-index:2}.partner .partner__desc{width:50%;margin:0 auto 30px;text-align:center}.partner .partner__desc .title{font-size:3rem;font-weight:300;color:#171717;margin-bottom:20px}.partner .partner__desc .text{font-size:.8rem;color:#bbb}
