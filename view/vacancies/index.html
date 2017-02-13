@@ -1,33 +1,47 @@
-<main class="main">
+<main class="main vacancie">
     <div class="container">
         <div class="grid grid--small">
             <div class="col--1-1">
                 <h1 class="page__title">ВАКАНСИИ</h1>
 
                 <p><img src="" alt=""></p>
-                <p class="t--md">ITA молодая и быстроразвивающаяся компания, мы всегда открыты для нового диалога с молодыми, амбициозными специалистами, мы рады будем видеть Вас в нашей команде. Для того, чтобы стать сотрудником ITA, выберите интересующую вас вакансию
+                <p class="t--md m--b-xlg">ITA молодая и быстроразвивающаяся компания, мы всегда открыты для нового диалога с молодыми, амбициозными специалистами, мы рады будем видеть Вас в нашей команде. Для того, чтобы стать сотрудником ITA, выберите интересующую вас вакансию
                     и используйте форму для связи с нами. В течение нескольких дней специалисты отдела по работе с персоналом пригласят вас на собеседование. . Вся процедура занимает не более недели. В том случае, если на сайте вы не находите интересующей
-                    вас вакансии, вы можете отправить ваше резюме на наш электронный адрес. Как только у нас появится вакансия, которая соответствует вашим интересам и профессиональному уровню, мы свяжемся с вами.</p>
+                    вас вакансии, вы можете отправить ваше резюме на наш электронный адрес. Как только у нас появится вакансия, которая соответствует вашим интересам и профессиональному уровню, мы свяжемся с вами.
+                </p>
+            </div>
+        </div>
+    </div>
 
-                <div class="grid">
-                    <div class="col--4-10 push--1-10">
-                        <div class="panel panel--shadow vacancie__waranty">
-                            <p class=""><small>ГАРАНТИИ</small></p>
-                            <h2 class="title">Apps and end devices that suit your needs</h2>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
-                        </div>
-                    </div>
-
-                    <div class="col--4-10 push--1-10">
-                        <ul class="grid list vacancie__waranty-list">
-                            <li class="col--1-2 list__item" data-ng-repeat="item in waranty">
-                                <p><i class="icon-{{item.icon}}"></i></p>
-                                <p class="title">{{item.title}}</p>
-                                <p class="text">{{item.text}}</p>
-                            </li>
-                        </ul>
+    <div class="block block--lg block--gray">
+        <div class="container">
+            <div class="grid">
+                <div class="col--4-10 push--1-10">
+                    <div class="panel panel--shadow vacancie__waranty">
+                        <p class="m--reset"><small class="vacancie__waranty-subtitle">ГАРАНТИИ</small></p>
+                        <h2 class="vacancie__waranty-title">Мы предлагаем будущим сотрудникам</h2>
+                        <p class="vacancie__waranty-text">
+                            Присылайте свое CV на адрес <a href="mailto:hrm@ita-dev.com" class="link link--dashed">hrm@ita-dev.com</a>. <br> Будем рады видеть Вас в нашей команде.
+                        </p>
                     </div>
                 </div>
+
+                <div class="col--5-10 push--1-10">
+                    <ul class="grid list vacancie__waranty-list">
+                        <li class="col--1-2 list__item" data-ng-repeat="item in waranty">
+                            <!-- <p></p> -->
+                            <p class="title"><i class="icon icon-{{item.icon}}"></i> {{item.title}}</p>
+                            <p class="text">{{item.text}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid grid--sm">
+            <div class="col--1-1">
 
                 <p class="t--c">
                     <img src="/content/img/vacancies-desktop.png" alt="">
